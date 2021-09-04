@@ -2,6 +2,7 @@ from readchar import readkey
 from colorama import init, Fore, Back, Style
 from termcolor import colored
 from time import sleep, time
+from random import choice
 
 init(autoreset=True)
 
@@ -14,7 +15,7 @@ print('''
 ''')
 print(f"Made by Nawaf in 2021, {colored('https://nawaf.cf', 'white', attrs=['underline'])}\n")
 
-text = 'On the other hand, we denounce with righteous indignation'
+text = choice(open('text.txt', 'r').read().strip().split(','))
 
 print('Ready?')
 sleep(1)
