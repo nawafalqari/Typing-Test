@@ -2,12 +2,17 @@ from readchar import readkey
 from colorama import init, Fore, Back, Style
 from termcolor import colored
 from time import sleep, time
-from pyfiglet import figlet_format
 
 init(autoreset=True)
 
-print(f'\n{figlet_format("Nawaf")}')
-print(f"Made by Nawaf in 2021, {colored('https://nawaf.cf', 'white', attrs=['underline'])}")
+print('''
+ _   _                      __ 
+| \ | | __ ___      ____ _ / _|
+|  \| |/ _` \ \ /\ / / _` | |_ 
+| |\  | (_| |\ V  V / (_| |  _|
+|_| \_|\__,_| \_/\_/ \__,_|_|
+''')
+print(f"Made by Nawaf in 2021, {colored('https://nawaf.cf', 'white', attrs=['underline'])}\n")
 
 text = 'On the other hand, we denounce with righteous indignation'
 
@@ -40,3 +45,27 @@ for i in text:
         
 print(f'\n\nYour score: {score}/{len(text)}')
 print(f'{Style.RESET_ALL}You took {round(time() - start)}s')
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
